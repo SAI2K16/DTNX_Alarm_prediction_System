@@ -1,0 +1,1 @@
+echo "$1" | mailx -v -r "$2" -s "Performance Monitoring-Error" -S smtp="smtp.gmail.com:587" -S smtp-use-starttls -S smtp-auth=login -S smtp-auth-user="$2" -S smtp-auth-password="$3" -S ssl-verify=ignore $4
